@@ -1,0 +1,270 @@
+@import "./reset";
+@import "./fonts";
+@import "./settings";
+@import "./sprite";
+
+
+
+
+/*HEADER*/
+/*==================================================*/
+.navbar{
+  &__self{
+    background: $menuBg;
+    height: 105px;
+  }
+  &__container{
+    height: 100%;
+    text-align: right;
+    font-size: 0px;
+  }
+  &__logo{
+    padding: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    width: 40%;
+  }
+  &__logoImg{
+    height: 100%;
+  }
+}
+
+
+.nav{
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  > li{
+    display: inline-block;
+    > a {
+      &:hover{
+        background-color: none;
+        background: none;
+        color: $accent;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+        transition: all .3s;
+      }
+    }
+  }
+  &-link{
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  
+
+
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.navbar{
+  &__self{
+    height: 90px;
+  }
+  &__logo{
+    vertical-align: middle;
+    float: none;
+    width: 40%;
+    text-align: left;
+  }
+}
+
+.nav{
+  width: 60%;
+  &-link{
+    font-size: 14px;
+  }
+}
+
+
+    
+
+
+}
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .navbar{
+    &__self{
+      height: 70px;
+    }
+    &__logo{
+      vertical-align: middle;
+      float: none;
+      width: 30%;
+      text-align: left;
+    }
+  }
+
+  .nav{
+    width: 70%;
+    > li{
+      > a {
+        padding: 5px;
+      }
+    }
+    &-link{
+      font-size: 13px;
+    }
+  }
+
+
+ 
+}
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+.navbar{
+    &__container{
+      padding: 0 5px;
+    }
+    &__self{
+      height: 30px;
+    }
+    &__logo{
+      vertical-align: middle;
+      float: none;
+      width: 30%;
+      text-align: left;
+    }
+  }
+
+  .nav{
+    width: 70%;
+    > li{
+      > a {
+        padding: 5px;
+      }
+    }
+    &-link{
+      font-size: 10px;
+      font-weight: 100;
+    }
+  }
+
+
+
+}
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+}
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+
+}
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
