@@ -8,9 +8,14 @@ require('../../node_modules/owl.carousel/dist/owl.carousel.min.js');
 
 
 
+
+
+// slider
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     items:1,
     smartSpeed: 500
   });
 });
+
+
