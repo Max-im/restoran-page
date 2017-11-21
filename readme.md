@@ -27,7 +27,7 @@
 
 ## __Run the App__
  - for start the project in develop mode:   
-  `npm test`
+  `gulp`
  - for build production version:      
   `gulp build`
 
@@ -37,7 +37,7 @@
 
 ## __Technologies:__
  - gulp ![gulp][gulpImg];
- - jQuery ![jQuery][jQueryImg];
+ - jQuery ![jQuery][jQueryImg] / owl.carousel;
  - HTML5 ![HTML][HTMLImg] / BEM ![bem][bemImg] / OpenGraph ![openGraph][openGraphImg];
  - Bootstrap ![bootstrap][bootstrapImg];
  - Sass (Scss) ![sass][sassImg] / CSS3 ![CSS3][cssImg];
@@ -49,16 +49,16 @@
 ## __Schedule:__
 | Num   | Action                                                    | Hours |
 | ----: | --------------------------------------------------------  | ----: |
-| 1.    | Consider the project, create repo, readme.md              | 2     |
-| 1.    | Environment init, structure the project                   | 1     |
-| 1.    | Prepare assets for the projects                           | 2     |
-| 1.    | Create Header component                                   | 4     |
-| 1.    | Create Slider component                                   | 4     |
+| 1.    | Consider the project, create repo, readme.md              | 0.5   |
+| 1.    | Environment init, structure the project                   | 0.5   |
+| 1.    | Prepare assets for the projects                           | 0.5   |
+| 1.    | Create Header component                                   | 1     |
+| 1.    | Create Slider component                                   | 1.5   |
 | 1.    | Create Map component                                      | 5     |
 | 1.    | Code review, refactoring                                  | 4     |
 | 1.    | Add microdata, correct readme                             | 2     |
 | 1.    | Deploy                                                    | 1     |
-|       | TOTAL                                                     | 1000  |
+|       | TOTAL                                                     | 4  |
 
 
 
