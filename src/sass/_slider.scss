@@ -1,15 +1,7 @@
-@import "./reset";
-@import "./fonts";
-@import "./settings";
-@import "./sprite";
+@import "./customise";
 @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css";
 
- #map {
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-  }
 
 
 
@@ -81,6 +73,9 @@
 
 
 // owl-carousel
+.no-js .owl-carousel, .owl-carousel.owl-loaded{
+  overflow: hidden;
+}
 .no-js .owl-carousel, .owl-carousel.owl-loaded{
   position: relative;
 }

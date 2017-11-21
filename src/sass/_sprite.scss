@@ -1,11 +1,46 @@
 %svg-common {
-	background: url("../img/svg/sprite-1834317b.svg") no-repeat;
+	background: url("../img/svg/sprite-cdcc4f34.svg") no-repeat;
 }
 
-.svg__i {
+.svg__clock {
 	@extend %svg-common;
 	background-position: 0 0;
-	width: 163.299px;
-	height: 157.826px;
+	width: 25.333px;
+	height: 24px;
+}
+
+.svg__facebook {
+	@extend %svg-common;
+	background-position: 0 16.744224986569737%;
+	width: 20px;
+	height: 38.667px;
+}
+
+.svg__instagram {
+	@extend %svg-common;
+	background-position: 0 43.15068493150685%;
+	width: 34.667px;
+	height: 36px;
+}
+
+.svg__mail {
+	@extend %svg-common;
+	background-position: 0 62.65822784810127%;
+	width: 32px;
+	height: 24px;
+}
+
+.svg__marker {
+	@extend %svg-common;
+	background-position: 0 79.87012987012987%;
+	width: 17.333px;
+	height: 28px;
+}
+
+.svg__phone {
+	@extend %svg-common;
+	background-position: 0 99.77995546245697%;
+	width: 30.667px;
+	height: 30.667px;
 }
 
