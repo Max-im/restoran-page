@@ -49,12 +49,53 @@
 					    <a class="nav-link" href="#">how to find</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="#">reservation</a>
+					    <a class="nav-link popup-modal" 
+                href="#reserv">
+                reservation
+              </a>
 					  </li>
 					</ul>
 
 				</div>
 			</nav>
+      
+      <!-- Modal structure -->
+      <div id="reserv" class="reserv__block mfp-hide">
+        <h3 class="reserv__title">reservation</h3>
+        <p class="reserv__text">Reserve a table for any convinient time</p>
+        <form>
+          <div>
+            <input 
+              class="reserv__inp" 
+              type="text" 
+              placeholder="Name" 
+              name="name" 
+              id="name">
+          </div>
+          <div>
+            <input 
+              class="reserv__inp" 
+              type="text" 
+              placeholder="Phone" 
+              name="phone" 
+              id="phone">
+          </div>
+          <div>
+            <input 
+              class="reserv__inp" 
+              type="email" 
+              placeholder="E-mail" 
+              name="email" 
+              id="email">
+          </div>
+          <button 
+            class="slider__btn btn reserv__btn"
+            type="button">
+            request a call
+          </button>
+        </form>
+        <p><a class="popup-modal-dismiss" href="#">&#x274C;</a></p>
+      </div>
 
 		</header>
 		
@@ -86,12 +127,21 @@
 									taste
 	 							</h2>
 	 							<button 
-	 								class="slider__btn btn"
+	 								class="slider__btn btn popup-modal"
+                  href="#slide__1"
 	 								type="button">
 	 								check the menu
 	 							</button>
-							</div>
 
+
+                <!-- Modal structure -->
+                <div id="slide__1" class="white-popup-block mfp-hide">
+                  <img class="slide__modalImg" src="./img/menu.jpg" alt="menu">
+                  <p><a class="popup-modal-dismiss" href="#">&#x274C;</a></p>
+                </div>
+
+
+							</div>
 						</div>
 					</div>
 			
@@ -116,15 +166,25 @@
 									taste
 	 							</h2>
 	 							<button 
-	 								class="slider__btn btn"
+	 								class="slider__btn btn popup-modal"
+                  href="#slide__2"
 	 								type="button">
 	 								check the menu
 	 							</button>
-							</div>
 
+
+                <!-- Modal structure -->
+                <div id="slide__2" class="white-popup-block mfp-hide">
+                  <img class="slide__modalImg" src="./img/menu.jpg" alt="menu">
+                  <p><a class="popup-modal-dismiss" href="#">&#x274C;</a></p>
+                </div>
+
+
+              </div>
 						</div>
-					</div>				
-				</div>
+
+					</div>
+				</div>				
 
 				<div class="slider__slide slider__slide_three">
 					<img src="./img/slide1.jpg" alt="restoran">
@@ -145,12 +205,21 @@
 									taste
 	 							</h2>
 	 							<button 
-	 								class="slider__btn btn"
+	 								class="slider__btn btn popup-modal"
+                  href="#slide__3"
 	 								type="button">
 	 								check the menu
 	 							</button>
-							</div>
 
+
+                 <!-- Modal structure -->
+                <div id="slide__3" class="white-popup-block mfp-hide">
+                  <img class="slide__modalImg" src="./img/menu.jpg" alt="menu">
+                  <p><a class="popup-modal-dismiss" href="#">&#x274C;</a></p>
+                </div>
+
+
+							</div>
 						</div>
 					</div>
 				</div>
@@ -216,6 +285,8 @@
 
 
 
+
+
 <!-- key -->
 <!-- AIzaSyB9Ne3y83MWrM2hKOEThaQaGxrojw7QULU  -->
 
@@ -229,6 +300,87 @@
           zoom: 15,
           center: place,
           icon: icon,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: 'red'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: 'red'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+
         });
         var beachMarker = new google.maps.Marker({
           position: place,

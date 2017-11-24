@@ -54,11 +54,11 @@
 | 1.    | Prepare assets for the projects                           | 0.5   |
 | 1.    | Create Header component                                   | 1     |
 | 1.    | Create Slider component                                   | 1.5   |
-| 1.    | Create Map component                                      | 5     |
+| 1.    | Create Map component                                      | 2     |
 | 1.    | Code review, refactoring                                  | 4     |
 | 1.    | Add microdata, correct readme                             | 2     |
 | 1.    | Deploy                                                    | 1     |
-|       | TOTAL                                                     | 4  |
+|       | TOTAL                                                     | 6     |
 
 
 

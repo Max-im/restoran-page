@@ -33,7 +33,9 @@
   &__svg{
     display: inline-block;
     &_i{
-      width: 50px;
+      width: 30px;
+      transform: scale(.6) translateY(10px);
+
     }
     &_soc{
       position: absolute;
@@ -55,7 +57,7 @@
     margin: 15px 15px 15px 0;
   }
   &__item{
-    color: #fff;
+    color: #e3e8f0;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     &_contacts{
