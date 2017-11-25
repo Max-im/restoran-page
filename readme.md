@@ -27,9 +27,9 @@
 
 ## __Run the App__
  - for start the project in develop mode:   
-  `gulp`
+  `npm start`
  - for build production version:      
-  `gulp build`
+  `npm run build`
 
 
 
@@ -55,6 +55,7 @@
 | 1.    | Create Header component                                   | 1     |
 | 1.    | Create Slider component                                   | 1.5   |
 | 1.    | Create Map component                                      | 2     |
+| 1.    | Create Popups                                             | 2     |
 | 1.    | Code review, refactoring                                  | 4     |
 | 1.    | Add microdata, correct readme                             | 2     |
 | 1.    | Deploy                                                    | 1     |
