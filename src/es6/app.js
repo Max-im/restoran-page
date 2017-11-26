@@ -32,4 +32,8 @@ $(function () {
     e.preventDefault();
     $.magnificPopup.close();
   });
+  $(document).on('click', '.reserv__btn', function (e) {
+    $.magnificPopup.close();
+    console.log('call')
+  });
 });
