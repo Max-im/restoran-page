@@ -297,72 +297,48 @@
       	const icon = './img/icon1.png';
         const place = {lat: 25.3300199, lng: 55.37242749999996};
         const map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
+          zoom: 16,
           center: place,
           icon: icon,
+          disableDefaultUI: true,
           styles: [
-            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {elementType: 'geometry', stylers: [{color: '#282828'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#1c1c1c'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#6b966d'}]},
             {
               featureType: 'administrative.locality',
               elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
+              stylers: [{color: '#484848'}]
             },
             {
               featureType: 'poi',
               elementType: 'labels.text.fill',
-              stylers: [{color: 'red'}]
+              stylers: [{color: '#484848'}]
             },
             {
               featureType: 'poi.park',
               elementType: 'geometry',
-              stylers: [{color: 'red'}]
+              stylers: [{color: '#212121'}]
             },
             {
               featureType: 'poi.park',
               elementType: 'labels.text.fill',
-              stylers: [{color: '#6b9a76'}]
+              stylers: [{color: '#484848'}]
             },
             {
               featureType: 'road',
               elementType: 'geometry',
-              stylers: [{color: '#38414e'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#212a37'}]
+              stylers: [{color: '#1c1c1c'}]
             },
             {
               featureType: 'road',
               elementType: 'labels.text.fill',
-              stylers: [{color: '#9ca5b3'}]
+              stylers: [{color: '#1c1c1c'}]
             },
             {
               featureType: 'road.highway',
               elementType: 'geometry',
-              stylers: [{color: '#746855'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#1f2835'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#f3d19c'}]
-            },
-            {
-              featureType: 'transit',
-              elementType: 'geometry',
-              stylers: [{color: '#2f3948'}]
-            },
-            {
-              featureType: 'transit.station',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
+              stylers: [{color: '#232323'}]
             },
             {
               featureType: 'water',
@@ -380,6 +356,7 @@
               stylers: [{color: '#17263c'}]
             }
           ]
+
 
         });
         var beachMarker = new google.maps.Marker({
