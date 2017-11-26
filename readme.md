@@ -37,7 +37,7 @@
 
 ## __Technologies:__
  - gulp ![gulp][gulpImg];
- - jQuery ![jQuery][jQueryImg] / owl.carousel;
+ - jQuery ![jQuery][jQueryImg] / owl.carousel / magnific-popup;
  - HTML5 ![HTML][HTMLImg] / BEM ![bem][bemImg] / OpenGraph ![openGraph][openGraphImg];
  - Bootstrap ![bootstrap][bootstrapImg];
  - Sass (Scss) ![sass][sassImg] / CSS3 ![CSS3][cssImg];
@@ -54,12 +54,12 @@
 | 1.    | Prepare assets for the projects                           | 0.5   |
 | 1.    | Create Header component                                   | 1     |
 | 1.    | Create Slider component                                   | 1.5   |
-| 1.    | Create Map component                                      | 2     |
+| 1.    | Create Map component                                      | 3     |
 | 1.    | Create Popups                                             | 2     |
-| 1.    | Code review, refactoring                                  | 4     |
-| 1.    | Add microdata, correct readme                             | 2     |
+| 1.    | Code review, refactoring                                  | 1     |
+| 1.    | Add microdata, correct readme                             | 1     |
 | 1.    | Deploy                                                    | 1     |
-|       | TOTAL                                                     | 6     |
+|       | TOTAL                                                     | 12    |
 
 
 
