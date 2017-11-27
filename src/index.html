@@ -23,7 +23,7 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet"> 
 
 
   <meta property="og:type" content="restaurant.restaurant" /> 
@@ -53,28 +53,39 @@
 				
 			<nav class="navbar navbar__self">
 				<div class="container navbar__container">
-					
-				  <a class="navbar-brand navbar__logo" href="#">
-				    <img src="./img/logo.jpg" 
-				    	class="navbar__logoImg" 
-				    	alt="less-restoran">
-				  </a>
 
-					<ul class="nav">
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">menu</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">how to find</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link popup-modal" 
-                href="#reserv">
-                reservation
-              </a>
-					  </li>
-					</ul>
+					<div class="navbar__part navbar__part_left">
+            <a class="navbar-brand navbar__logo" href="#">
+              <img src="./img/logo.jpg" 
+                class="navbar__logoImg" 
+                alt="less-restoran">
+            </a>
+          </div>
 
+
+
+          <div class="navbar__part navbar__part_right">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">how to find</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link popup-modal" 
+                  href="#reserv">
+                  reservation
+                </a>
+              </li>
+            </ul>
+            <div class="sandwich">
+              <div class="sw-topper"></div>
+              <div class="sw-bottom"></div>
+              <div class="sw-footer"></div>
+            </div>
+          </div>
+  
 				</div>
 			</nav>
       
@@ -281,11 +292,11 @@
 					<ul class="map__location">
 						<li class="map__item map__item_location">
 							<i class="map__svg map__svg_i svg__marker"></i> 
-							AI Khan Street, Lamia Tower - Sharjah
+							AI Khan Street, <span class="map__span">Lamia Tower - Sharjah</span>
 						</li>
 						<li class="map__item map__item_location">
 							<i class="map__svg map__svg_i svg__clock"></i> 
-							7 Days a week from 10:00 am to 1:00 am
+							7 Days a week <span class="map__span">from 10:00 am to 1:00 am</span>
 						</li>
 					</ul>
 
@@ -315,9 +326,10 @@
       function initMap() {
       	const icon = './img/icon1.png';
         const place = {lat: 25.3300199, lng: 55.37242749999996};
+        let show = {lat: 25.330, lng: 55.3776};
         const map = new google.maps.Map(document.getElementById('map'), {
           zoom: 16,
-          center: place,
+          center: show,
           icon: icon,
           disableDefaultUI: true,
           styles: [
@@ -375,9 +387,7 @@
               stylers: [{color: '#17263c'}]
             }
           ]
-
-
-        });
+        });       
         var beachMarker = new google.maps.Marker({
           position: place,
           map: map,

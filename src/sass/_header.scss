@@ -6,11 +6,23 @@
 /*HEADER*/
 /*==================================================*/
 .navbar{
+  font-size: 0;
   &__self{
     background: $menuBg;
     height: 105px;
     border-radius: 0px;
     margin: 0;
+  }
+  &__part{
+    display: inline-block;
+    &_left{
+      width: 30%;
+      height: 100%;
+    }
+    &_right{
+      width: 70%;
+      height: 100%;
+    }
   }
   &__container{
     height: 100%;
@@ -23,20 +35,27 @@
     display: inline-block;
     vertical-align: middle;
     float: none;
-    width: 40%;
   }
   &__logoImg{
     height: 100%;
   }
 }
 
+.nav > li > a{
+  padding: 10px 25px; 
+  &:last-child{ 
+    padding-right: 0;
+  }
+
+}
+
 
 .nav{
   display: inline-block;
   vertical-align: middle;
-  width: 60%;
   > li{
     display: inline-block;
+    vertical-align: middle;
     > a {
       &:hover{
         background-color: none;
@@ -61,6 +80,90 @@
 
 
 
+$w: 30px;
+$h: 3px;
+$accentSendwich: #b0ed3a;;
+
+/*sendwich*/
+
+.sandwich{
+  width: $w;
+  height: $w;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0 15px;
+  display: none;
+  &:hover{
+  .sw-topper,
+  .sw-bottom,
+  .sw-footer{
+    background: $accentSendwich;
+  }
+  } 
+} 
+
+
+.sw-topper{
+  position: relative;
+  top: 0;
+  width: $w;
+  height: $h;
+  background: #fff;
+  border: none; 
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 6px rgba(0,0,0,.35);
+  transition: transform 0.5s, top 0.2s;
+   transition-delay: 0.2s, 0s; 
+}
+
+
+
+.sw-bottom{
+  position: relative;
+  width: $w;
+  height: $h;
+  top: $h * 2;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 6px rgba(0,0,0,.35);
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s; 
+}
+
+.sw-footer{
+
+  position: relative;
+  width: $w;
+  height: $h;
+  top: $h * 4;
+  background: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 6px rgba(0,0,0,.35);
+  transition: transform 0.5s;
+  transition-delay: .1s; 
+}
+
+.sandwich.swich{
+
+  .sw-topper{
+  top: 12px;
+  transform: rotate(140deg);
+  }
+  .sw-bottom{
+  top: 9px;
+  transform: rotate(-140deg);
+  }
+  .sw-footer{
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg);
+  }
+}
+
+
 
  /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -82,13 +185,11 @@
   &__logo{
     vertical-align: middle;
     float: none;
-    width: 40%;
     text-align: left;
   }
 }
 
 .nav{
-  width: 60%;
   &-link{
     font-size: 14px;
   }
@@ -114,16 +215,23 @@
     &__logo{
       vertical-align: middle;
       float: none;
-      width: 30%;
       text-align: left;
     }
   }
 
   .nav{
-    width: 70%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 150;
+    background: $menuBg;
+    display: none;
+      width: 200px;
+      text-align: center;
     > li{
+      display: block;
       > a {
-        padding: 5px;
+        padding: 10px 20px;
       }
     }
     &-link{
@@ -131,6 +239,20 @@
     }
   }
 
+
+
+  // sandwich
+  .sandwich{
+    display: inline-block;
+    vertical-align: middle;
+    &:hover{
+    .sw-topper,
+    .sw-bottom,
+    .sw-footer{
+      background: $accentSendwich;
+    }
+    } 
+  } 
 
  
 }
@@ -152,24 +274,9 @@
     &__logo{
       vertical-align: middle;
       float: none;
-      width: 30%;
       text-align: left;
     }
   }
-
-  .nav{
-    width: 70%;
-    > li{
-      > a {
-        padding: 5px;
-      }
-    }
-    &-link{
-      font-size: 10px;
-      font-weight: 100;
-    }
-  }
-
 
 
 }
@@ -213,7 +320,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+.nav{
+  display: inline-block !important;
+}
 
 
 }

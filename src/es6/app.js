@@ -9,9 +9,28 @@ require('../../node_modules/owl.carousel/dist/owl.carousel.min.js');
 require('../../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js');
 
 
+
+// sandwich
+$(".sandwich").click(toggleMenu);
+$(".nav-link").click(toggleMenu);
+
+function toggleMenu() {
+  $(".sandwich").toggleClass("swich");
+  if($(".sandwich").hasClass("swich")){
+    $(".nav").slideDown();
+  }
+  else{
+    $(".nav").slideUp();
+  }
+}
+
+
+
+
+
+// slider
 $(document).ready(function(){
   
-  // slider
   $('.owl-carousel').owlCarousel({
     items:1,
     smartSpeed: 500
