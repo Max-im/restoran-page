@@ -50,16 +50,17 @@
 | Num   | Action                                                    | Hours |
 | ----: | --------------------------------------------------------  | ----: |
 | 1.    | Consider the project, create repo, readme.md              | 0.5   |
-| 1.    | Environment init, structure the project                   | 0.5   |
-| 1.    | Prepare assets for the projects                           | 0.5   |
-| 1.    | Create Header component                                   | 1     |
-| 1.    | Create Slider component                                   | 1.5   |
-| 1.    | Create Map component                                      | 3     |
-| 1.    | Create Popups                                             | 2     |
-| 1.    | Code review, refactoring                                  | 1     |
-| 1.    | Add microdata, correct readme                             | 1     |
-| 1.    | Deploy                                                    | 1     |
-|       | TOTAL                                                     | 12    |
+| 2.    | Environment init, structure the project                   | 0.5   |
+| 3.    | Prepare assets for the projects                           | 0.5   |
+| 4.    | Create Header component                                   | 1     |
+| 5.    | Create Slider component                                   | 1.5   |
+| 6.    | Create Map component                                      | 3     |
+| 7.    | Create Popups                                             | 2     |
+| 8.    | Code review, refactoring                                  | 1     |
+| 9.    | Add microdata, correct readme                             | 1     |
+| 10.   | Deploy                                                    | 1     |
+| 11.   | Remake adaptive                                           | 3     |
+|       | TOTAL                                                     | 15    |
 
 
 
