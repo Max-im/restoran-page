@@ -59,8 +59,8 @@
 | 8.    | Code review, refactoring                                  | 1     |
 | 9.    | Add microdata, correct readme                             | 1     |
 | 10.   | Deploy                                                    | 1     |
-| 11.   | Remake adaptive                                           | 3     |
-|       | TOTAL                                                     | 15    |
+| 11.   | Remake adaptive                                           | 4     |
+|       | TOTAL                                                     | 16    |
 
 
 
