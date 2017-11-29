@@ -15,9 +15,12 @@
   }
   &__part{
     display: inline-block;
+    box-sizing: border-box;
     &_left{
       width: 30%;
       height: 100%;
+      text-align: left;
+      padding: 0 0 0 10px;
     }
     &_right{
       width: 70%;

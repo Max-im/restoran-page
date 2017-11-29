@@ -12,8 +12,9 @@ $accent: #b0ed3a;
   max-width: 1170px;
 }
 
-a{
-  outline: none;
+a, input, button{
+  outline: none !important;
+  
 }
 
 

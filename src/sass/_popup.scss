@@ -33,9 +33,9 @@
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
-  &:hover{
-    color: red;
-  }
+  // &:hover{
+  //   color: red;
+  // }
 }
 
 
@@ -81,6 +81,8 @@
   }
   &__btn{
     width: 100%;
+    font-size: 17px;
+    font-weight: 800;
   }
 
 }

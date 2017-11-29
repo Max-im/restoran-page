@@ -27,7 +27,7 @@
     position: absolute;
     height: 100%;
     box-sizing: border-box;
-    padding: 12% 0 0 9%;
+    padding: 11.5% 0 0 9%;
   }
   &__svg{
     display: inline-block;
@@ -55,7 +55,7 @@
     height: 65px;
     text-align: center;
     position: relative;
-    margin: 15px 15px 15px 0;
+    margin: 18px 22px 11px 0;
   }
   &__item{
     color: #e3e8f0;
@@ -68,7 +68,8 @@
     }
     &_location{
       font-size: 17px;
-      margin: 8px 0 0 0;
+      margin: 10px 0 0 0;
+      letter-spacing: -0.4px;
     }
   }
 }
