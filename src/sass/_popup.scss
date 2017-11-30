@@ -21,7 +21,7 @@
 }
 .popup-modal-dismiss{
   text-decoration: none !important;
-  color: black;
+  color: black !important;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -33,9 +33,9 @@
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
-  // &:hover{
-  //   color: red;
-  // }
+  &:hover{
+    color: red !important;
+  }
 }
 
 
@@ -67,22 +67,24 @@
     font-size: 16px;
   }
   &__inp{
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     margin: 10px 0;
     border-radius: 30px;
     border: none;
     padding: 0 20px;
     box-sizing: border-box;
-    font-weight: 100;
+    font-weight: 300;
     color: #080808;
     font-size: 15px;
     background: #efefef;
     height: 55px;
   }
   &__btn{
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 800 !important;
   }
 
 }
