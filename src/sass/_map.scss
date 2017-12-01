@@ -9,6 +9,11 @@
     width: 100%;
     height: 430px;
     background-color: grey;
+    &_findUs{
+      width: 100%;
+      height: calc(100vh - 105px);
+      background-color: grey;
+    }
   }
 
 
@@ -22,12 +27,18 @@
     background: rgba(0,0,0,.5);
     right: 0;
     top: 0;
+    &_findUs{
+      width: 44%;
+    }
   }
   &__infoContent{
     position: absolute;
     height: 100%;
     box-sizing: border-box;
     padding: 11.5% 0 0 9%;
+    &_findUs{
+      padding: 33.5% 0 0 11%;
+    }
   }
   &__svg{
     display: inline-block;
@@ -112,6 +123,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  #map {
+    &_findUs{
+      height: calc(100vh - 90px);
+    }
+  }
 
 .map{
   &__svg{
@@ -149,8 +165,10 @@
 @media only screen and (max-width : 768px) {
  #map {
     height: 300px;
+    &_findUs{
+      height: calc(100vh - 70px);
+    }
   }
-
 
 .map{
    &__infoContent{
@@ -159,6 +177,11 @@
   &__svg{
     &_i{
       transform: scale(.5) translateY(15px);
+    }
+  }
+  &__infoContent{
+    &_findUs{
+      padding: 33.5% 0 0 11%;
     }
   }
   &__socialList{

@@ -15,6 +15,9 @@ $(".sandwich").click(toggleMenu);
 $(".nav-link").click(toggleMenu);
 
 function toggleMenu() {
+  if(!$(".sandwich").is(":visible")){
+    return;
+  }
   $(".sandwich").toggleClass("swich");
   if($(".sandwich").hasClass("swich")){
     $(".nav").slideDown();
@@ -53,6 +56,5 @@ $(function () {
   });
   $(document).on('click', '.reserv__btn', function (e) {
     $.magnificPopup.close();
-    console.log('call')
   });
 });
